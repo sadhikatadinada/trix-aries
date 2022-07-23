@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARIES | CONTACT</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" href="assets/favicon_io/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        /*header*/
+        .header {
+            height: 100vh;
+            width: 100%;
+            padding: 0 10%;
+            background: #D8D2CB;
+        }
+
+        nav img {
+            width: 12.5%;
+            height: auto;
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 10px 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #398AB9;
+            font-size: 20px;
+        }
+
+        /* footer */
+
+        .footer {
+            padding: 40px 40px;
+            background-color: #D8D2CB;
+            margin-left: -134.5px;
+        }
+
+        .footer .social {
+            text-align: center;
+            padding-bottom: 25px;
+            color: #1C658C;
+            padding-left: 100px;
+        }
+
+        .footer .social a {
+            font-size: 25px;
+            color: inherit;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .footer ul {
+            margin-top: 0;
+            padding: 0;
+            list-style: none;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+            padding-left: 100px;
+        }
+
+        .footer ul a {
+            color: #1C658C;
+            text-decoration: none;
+        }
+
+        .footer ul li {
+            display: inline-block;
+            padding: 0 15px;
+        }
+
+        .footer .copyright {
+            margin-top: 15px;
+            text-align: center;
+            color: #1C658C;
+            padding-left: 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <nav>
+            <img src="assets/space-logo.png" alt="logo">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#about">ABOUT</a></li>
+                <li><a href="index.html#mission">GOALS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="contact">
+        <h1 style="text-align: center; font-size: 50px; color: #398AB9;">Get in Touch</h1> <br>
+        <form method="post" action="/submitted">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your first name">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="china">China</option>
+                <option value="india">India</option>
+                <option value="russia">Russia</option>
+                <option value="sa">South Africa</option>
+                <option value="uk">UK</option>
+                <option value="usa">USA</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Your Message" style="height:200px"></textarea>
+            <br>
+
+            <a class="btn-trans" onclick="popupToggle();" >Submit</a>
+                    <div id="popup">
+                        <div class="content" style="background: #1C658C;">
+                            <img src="assets/email-open.png" alt="email icon" style="background: #1C658C;">
+                            <h2 style="background: #1C658C; align-items: justify;">Thank you for reaching out &emsp; &emsp; &emsp; &emsp; &emsp; to us</h2>
+                            <p style="background: #1C658C;">We will reach out to you as soon as possible. Be patient!</p>
+                        </div>
+                        <a href="index.html" class="close" onclick="popupToggle();"><img src="assets/close-button.png"
+                                alt="close button" style="background: #1C658C;"></a>
+                    </div>
+                    <!-- popup js -->
+                    <script>
+                        function popupToggle() {
+                            const popup = document.getElementById('popup');
+                            popup.classList.toggle('active')
+                        }
+                    </script>
+
+        </form>
+    </div>
+
+    <!-- google map -->
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53331424.92731343!2d46.4877383965953!3d20.050785387790352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e1!3m2!1sen!2sin!4v1658069748505!5m2!1sen!2sin"
+            width="1000" height="800" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- footer -->
+    <section class="footer">
+        <div class="social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#">HOME</a>
+            </li>
+            <li>
+                <a href="#">ABOUT</a>
+            </li>
+            <li>
+                <a href="#">FEATURES</a>
+            </li>
+            <li>
+                <a href="#">TERMS</a>
+            </li>
+            <li>
+                <a href="#">PRIVACY POLICY</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            &copy; 2150 ARIES
+        </p>
+
+    </section>
+
+</body>
+
+</html>

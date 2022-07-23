@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon_io/favicon.ico">
+    <title>ARIES</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <img src="assets/space-logo.png" alt="logo">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#mission">GOALS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-text" id="home">
+            <h1 style="text-align: justify;">“Mining asteroids will ultimately benefit humanity on and off the Earth 
+                in a multitude of ways.” ~ Peter Diamandis</h1>
+            <br>
+            <p style="text-align: justify;">Our metals are the essential ingredients in smartphones, electric cars and spaceships; 
+                our basic materials build homes, railways, airports and inter-planetary networks. 
+                Simply put, our products move the world towards a more sustainable future.
+            </p>
+
+            <a href="#about">Explore</a>
+        </div>
+
+        <!-- about us -->
+        <section class="about" id="about">
+            <a href="#about"></a>
+            <video src="assets/space-mining-vid.mp4" width="650" controls></video>
+            <div class="about-text">
+                <br>
+                <h1>About Us</h1> <br>
+                <p>ARIES mining was founded on 21st July 2100 in Columbia Hills, Gusev - Mars 
+                    and is now one of the largest mining companies. 
+                    Our purpose is to build a better world by bringing people and resources a bit closer. 
+                    We try this through our strategy to deliver long-term value and returns 
+                    through the cycle. We produce essential commodities through our assets, 
+                    including iron ore, copper, nickel, potash, bauxite, phosphorous rock, 
+                    gypsum. We are proud of everything we have achieved. 
+                    At ARIES, we know our future is even brighter than our past.</p>
+                    <a href="services.html">Explore</a>
+            </div>
+        </section>
+
+        <!-- our mission -->
+        <section class="mission" id="mission">
+            <a href="#mission"></a>
+            <div class="mission-text">
+                <br>
+                <h1>Our Goals</h1> <br>
+                <p>ARIES is committed to advancing everyday life by supplying the commodities 
+                    needed to develop, sustain and improve the world around us. 
+                    Our state-of-the-art machinery makes it possible to reach the farthest asteroids 
+                    and planets in our solar system. <br>
+                    Through the scale and diversity of our mining methods, 
+                    we responsibly supply the commodities that are fundamental to the building 
+                    blocks of our inter-planetary system.
+                    Be that to build essential infrastructure, 
+                    from homes and hospitals, to roads and rail networks; or to ensure access to 
+                    affordable energy for all.</p>
+            </div>
+            <img src="assets/render2.jpeg" alt="earth" width="650" height="400">
+        </section>
+
+
+        <!-- newsletter -->
+        <section class="newsletter center">
+            <div class="container">
+                <div class="newsletter-wrapper">
+                    <h2 class="newsletter-title">
+                        Subscribe To Our Newsletter
+                    </h2>
+                    <h4>Subscribe to stay updated with our latest accomplishments</h4>
+                    <input type="email" class="form-control" placeholder="Your Email" required>
+                    <a class="btn-trans" onclick="popupToggle();">Subscribe</a>
+                    <div id="popup">
+                        <div class="content">
+                            <img src="assets/email-open.png" alt="email icon">
+                            <h2>Thank you for Subscribing</h2>
+                            <p>Thank you for subscribing.
+                                You will be the first to know
+                                about our new missions, giveaways
+                                and much more. Stay Tuned!</p>
+                        </div>
+                        <a href="" class="close" onclick="popupToggle();"><img src="assets/close-button.png"
+                                alt="close button"></a>
+                    </div>
+                    <!-- popup js -->
+                    <script>
+                        function popupToggle() {
+                            const popup = document.getElementById('popup');
+                            popup.classList.toggle('active')
+                        }
+                    </script>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <section class="footer">
+            <div class="social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+
+            <ul class="list">
+                <li>
+                    <a href="#">HOME</a>
+                </li>
+                <li>
+                    <a href="#about">ABOUT</a>
+                </li>
+                <li>
+                    <a href="services.html">FEATURES</a>
+                </li>
+                <li>
+                    <a href="#">TERMS</a>
+                </li>
+                <li>
+                    <a href="#">PRIVACY POLICY</a>
+                </li>
+            </ul>
+            <p class="copyright">
+                &copy; 2150 ARIES
+            </p>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>
